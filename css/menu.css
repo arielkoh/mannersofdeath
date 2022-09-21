@@ -1,0 +1,112 @@
+/* 
+ * Top menu bar navigation.
+ * changes to hamburger-menu when width is below threshold.
+ */
+
+.main-nav__bar {
+  background: #f4f4f4;
+  border-bottom: 1px solid #222222;
+  color: #222222;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.man-nav__current {
+  font-weight: 700;
+}
+
+.main-nav__list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.main-nav__item,
+.main-nav__title {
+  margin: 0 1rem;
+  padding: 1rem 0;
+}
+
+.main-nav__title {
+  margin: 0 2rem;
+  z-index: 10000;
+  color: #fff;
+}
+
+.main-nav__item a {
+  color: inherit;
+  display: block;
+}
+
+.main-nav__item a:hover {
+  color: #10b981;
+}
+
+.main-nav__ham {
+  display: none;
+  padding: 2rem;
+}
+
+.main-nav__ham-bar {
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin: 4px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background: #222222;
+}
+
+@media only screen and (max-width: 768px) {
+  .main-nav__list {
+    align-items: flex-start;
+    background: #222222;
+    flex-direction: column;
+    height: 100vh;
+    left: -100%;
+    padding-top: 20vh;
+    position: fixed;
+    text-align: left;
+    transition: 0.3s;
+    width: 100%;
+  }
+
+  .main-nav__list.active {
+    left: 0;
+  }
+
+  .main-nav__item,
+  .main-nav__item a {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-left: 1rem;
+    padding: 0;
+    width: 80%;
+    color: #eeeeee;
+    padding-bottom: 0rem;
+  }
+
+  .main-nav__ham {
+    display: block;
+    cursor: pointer;
+    padding: 1rem;
+  }
+
+  .main-nav__ham.active .main-nav__ham-bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .main-nav__ham.active .main-nav__ham-bar:nth-child(1) {
+    -webkit-transform: translateY(3px) rotate(45deg);
+    transform: translateY(5px) rotate(45deg);
+  }
+
+  .main-nav__ham.active .main-nav__ham-bar:nth-child(3) {
+    -webkit-transform: translateY(-3px) rotate(-45deg);
+    transform: translateY(-5px) rotate(-45deg);
+  }
+}

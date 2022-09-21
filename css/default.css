@@ -1,0 +1,495 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  line-height: inherit;
+  margin-bottom: 1rem;
+}
+
+.p__side {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  width: 75%;
+  max-width: 85%;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+  font-size: inherit;
+  font-weight: inherit;
+  color: inherit;
+  line-height: inherit;
+  transition: 0.5s;
+}
+
+a:hover {
+  transition: 0.5s;
+}
+
+.link__rounded {
+  padding: 0.5rem 1rem;
+  border-radius: 4rem;
+  border: solid 1px;
+}
+
+.link__rounded:hover {
+  background: #fff;
+}
+
+.link__list-item {
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-top: 2rem;
+}
+
+/* figures */
+
+figcaption {
+  padding: 1rem 2rem;
+  font-style: italic;
+}
+
+.invisible {
+  display: none;
+}
+/* Hero Element for the Landing page */
+
+.hero__container {
+  width: 100%;
+}
+
+.hero__image,
+.hero__image img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: relative;
+}
+
+.hero__overlay {
+  color: #ffffff;
+  font-size: 5rem;
+  font-weight: 200;
+}
+
+.hero__overlay {
+  top: 20vh;
+  color: #ffffff;
+  font-size: 5rem;
+  font-weight: 200;
+  left: 2rem;
+  min-width: 50vw;
+  text-align: left;
+  position: absolute;
+}
+
+/* Default Content Elements */
+
+.content-default__teaser {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  max-width: 960px;
+  padding: 2rem;
+}
+
+.content-default__row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+.content-default__column-1 {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  flex: 1;
+}
+
+.content-default__column-2 {
+  display: flex;
+  flex-basis: 100%;
+  flex-direction: column;
+  flex: 2;
+}
+
+.content-default__image {
+  width: 100%;
+}
+
+.content-default__full-image img {
+  display: block;
+  height: 100vh;
+  object-fit: cover;
+  width: 100%;
+}
+
+.content-default__references li,
+.content-default__references li i {
+  list-style: none;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 400;
+}
+
+/* Footer */
+
+.footer {
+  z-index: 60;
+  width: 100%;
+  min-height: 30vh;
+  position: absolute;
+}
+
+.footer__content {
+  padding: 2rem;
+  color: inherit;
+}
+
+/*Table */
+
+.data-table__outer {
+  width: 100%;
+}
+
+.data-table__head,
+.data-table__head th {
+  border-bottom: 1px solid #999999;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem 0;
+  text-align: left;
+}
+
+.data-table__body,
+.data-table__body td {
+  border-bottom: 1px solid #666666;
+  padding: 0.5rem 0.5rem;
+  font-size: 1.25rem;
+}
+
+/* Gallery, series of images arranged 
+ * in a grid which adapts to window width 
+*/
+
+.content-gallery__container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  max-width: 1280px;
+  padding: 0 1rem;
+}
+
+.content-gallery__figure {
+  flex-grow: 0;
+  flex-basis: 512px;
+  margin: 1rem;
+}
+
+.content-gallery__figure figcaption {
+  font-size: 0.9rem;
+}
+
+.content-gallery__figure img {
+  height: auto;
+  max-width: 680px;
+  min-width: 320px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Image Slider Gallery Splide */
+
+.splide-gallery {
+  height: 100%;
+  width: 100%;
+}
+
+.splide-gallery img {
+  width: 100%;
+  height: auto;
+}
+
+button.splide__arrow {
+  background: transparent;
+}
+
+.splide__arrow svg {
+  fill: #ffffff;
+}
+
+.splide__pagination {
+  top: 105%;
+}
+
+button.splide__pagination__page {
+  background: #000;
+  margin: 4px;
+  width: 10px;
+  height: 10px;
+}
+
+.gallery-image {
+  position: absolute;
+}
+
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+.sketch__full iframe {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+
+/* padding */
+
+.padding__top-xlarge {
+  padding-top: 16rem;
+}
+.padding__top-large {
+  padding-top: 8rem;
+}
+
+.padding__top-medium {
+  padding-top: 4rem;
+}
+
+.padding__top-normal {
+  padding-top: 2rem;
+}
+
+.padding__top-small {
+  padding-top: 1rem;
+}
+.padding__bottom-xlarge {
+  padding-bottom: 16rem;
+}
+.padding__bottom-large {
+  padding-bottom: 8rem;
+}
+.padding__bottom-medium {
+  padding-bottom: 4rem;
+}
+.padding__bottom-normal {
+  padding-bottom: 2rem;
+}
+.padding__bottom-small {
+  padding-bottom: 1rem;
+}
+
+.padding__left-xlarge {
+  padding-left: 16rem;
+}
+
+.padding__left-large {
+  padding-left: 8rem;
+}
+
+.padding__left-normal {
+  padding-left: 2rem;
+}
+
+.padding__left-small {
+  padding-left: 1rem;
+}
+
+.margin__left-xlarge {
+  margin-left: 16rem;
+}
+
+.margin__left-large {
+  margin-left: 8rem;
+}
+
+.margin__left-normal {
+  margin-left: 2rem;
+}
+
+.margin__left-small {
+  margin-left: 1rem;
+}
+
+/* standard width, used for text blocks and images */
+.max-width__1-4 {
+  max-width: 320px;
+  width: 25%;
+}
+.max-width__2-4 {
+  max-width: 640px;
+  width: 50%;
+}
+.max-width__3-4 {
+  max-width: 960px;
+  width: 75%;
+}
+
+.max-width__1-2 {
+  max-width: 640px;
+  width: 50%;
+}
+
+.max-width__1-3 {
+  max-width: 512px;
+  width: 33%;
+}
+.max-width__2-3 {
+  max-width: 1024px;
+  width: 67%;
+}
+.max-width__full {
+  max-width: 100%;
+  width: 100%;
+}
+.width__50 {
+  width: 50%;
+}
+
+.bounce {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  bottom: 0;
+  margin-top: -25px;
+  margin-left: -25px;
+  height: 80px;
+  width: 50px;
+  font-size: 4rem;
+  color: rgb(255, 255, 255);
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -o-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+.bounce img {
+  width: 50px;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 15px;
+  }
+  100% {
+    bottom: 30;
+  }
+}
+
+@-moz-keyframes bounce {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 15px;
+  }
+  100% {
+    bottom: 30;
+  }
+}
+
+@-o-keyframes bounce {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 15px;
+  }
+  100% {
+    bottom: 30;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: 15px;
+  }
+  100% {
+    bottom: 30;
+  }
+}
+
+/* 
+ * Media Queries
+ * Adjust layout based on screen width.
+ * media query specific styles, these styles are changed and apply 
+ * when the website is used on a mobile device in portrait mode. 
+*/
+
+@media only screen and (orientation: portrait) and (min-device-width: 375px) {
+  .content-default__row {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+  }
+
+  .content-default__row h2 {
+    border: 0;
+  }
+
+  .content-default__teaser {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    padding: 1rem;
+  }
+
+  .content-gallery__figure {
+    margin: 1rem 0;
+  }
+
+  .max-width__1-4,
+  .max-width__2-4,
+  .max-width__3-4,
+  .max-width__1-2,
+  .max-width__1-3,
+  .max-width__2-3 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .padding__left-xlarge,
+  .padding__left-large,
+  .padding__left-normal,
+  .padding__left-small {
+    padding-left: 0;
+  }
+
+  .p__side {
+    width: 85%;
+    max-width: 85%;
+  }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1920px) and (min-width: 1280px) {
+  .content-default__row {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+}

@@ -1,0 +1,211 @@
+*,
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*
+To change the background and foreground colors, replace 
+hex-coded color #f4f4f4 with your background color. Then replace 
+hex-coded color #222222 with your foreground (text) color. To 
+change the link-hover color, look for hex-coded color #10b981
+*/
+
+/* General background color */
+
+body {
+  background: #f4f4f4;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  color: #222222;
+}
+
+.heading__normal {
+  font-size: 1.5rem;
+}
+
+.heading__sub-1 {
+  font-size: 1.15rem;
+  text-decoration: underline;
+}
+
+.heading__sub-2 {
+  font-size: 1.15rem;
+  text-decoration: underline;
+  padding-bottom: 2rem;
+}
+
+/* Paragraphs */
+
+p {
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #222222;
+}
+
+.p__large {
+  font-size: 2.25rem;
+  line-height: 2.75rem;
+  font-weight: 400;
+}
+
+.p__small {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+.p__table {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+}
+
+/* Links */
+
+.link__rounded {
+  background: transparent;
+  font-size: 1.25rem;
+}
+
+.link__rounded:hover {
+  background: #fff;
+}
+
+a:hover {
+  color: #10b981;
+}
+
+/* Others */
+
+li {
+  color: #222222;
+}
+
+figcaption {
+  color: #222222;
+}
+
+/* Menu */
+
+.main-nav__bar {
+  background: #FEC89A;
+  border-bottom: 1px solid #222222;
+}
+
+.main-nav__title {
+  color: #222222;
+}
+
+.main-nav__item,
+.main-nav__title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #222222;
+}
+
+.man-nav__current {
+  text-decoration: underline;
+}
+
+.main-nav__item a:hover {
+  color: #10b981;
+}
+
+/* Footer */
+
+.footer {
+  color: #222222;
+}
+
+/* Color blocks */
+.bg__1 {
+  background: rgb(254, 200, 154);
+}
+.bg__2 {
+  background: rgb(255, 243, 176);
+}
+.bg__3 {
+  background: rgb(255, 255, 255);
+}
+
+/* 
+ * Media Queries
+ * Adjust layout based on screen width.
+ * media query specific styles, these styles are changed and apply 
+ * when the website is used on a mobile device in portrait mode. 
+*/
+
+@media only screen and (orientation: portrait) and (min-device-width: 375px) {
+  .content-default__teaser {
+    padding: 1rem;
+  }
+
+  .content-default__row h2 {
+    border: 0;
+  }
+
+  .link__rounded {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .heading__normal {
+    font-size: 2rem;
+  }
+
+  .heading__sub-1,
+  .heading__sub-2 {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+  }
+
+  .p__large {
+    font-size: 1.75rem;
+    line-height: 2rem;
+  }
+
+  .p__xlarge {
+    font-size: 2.25rem;
+  }
+
+  .p__side {
+    font-size: 0.75rem;
+    width: 85%;
+    max-width: 85%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-nav__list {
+    background: #222222;
+  }
+
+  .main-nav__item,
+  .main-nav__item a {
+    font-size: 3rem;
+    color: #f4f4f4;
+    font-weight: 300;
+  }
+  .main-nav__item a:hover {
+    color: #10b981;
+  }
+}

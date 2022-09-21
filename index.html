@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+    README
+    To make changes to the document below, you need to read through 
+    the following HTML code and comments. Content blocks can be identified 
+    by their id and class name. Read through the code thoroughly so that you 
+    can make modifications if necessary. Ideally, you will understand the 
+    structure of the HTML code below so that you can add your own content 
+    blocks that suits your content and design best.
+    -->
+
+<html lang="en">
+  <head>
+    <title>CiD August – November 2021, Information Design Project.</title>
+
+    <!-- Meta information, for machines to read, SEO -->
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="Author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <!-- Load StyleSheets -->
+    <link rel="stylesheet" type="text/css" href="./css/default.css" />
+    <link rel="stylesheet" type="text/css" href="./css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Main content container -->
+    <div class="container">
+      <!-- Header Menu -->
+      <nav class="main-nav__bar">
+        <a href="./index.html" class="main-nav__title">Manners of Death</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item man-nav__current"><a href="./index.html">Index</a></li>
+          <li class="main-nav__item"><a href="./data.html">Data</a></li>
+          <li class="main-nav__item"><a href="./artefact.html">Artefact</a></li>
+        </ul>
+        <div class="main-nav__ham">
+          <span class="main-nav__ham-bar"></span>
+          <span class="main-nav__ham-bar"></span>
+          <span class="main-nav__ham-bar"></span>
+        </div>
+      </nav>
+
+      <main>
+        <section id="intro">
+          <!-- the hero image -->
+          <div class="index__container bg__1">
+            <div class="index__gif">
+              <img src="./assets/index/index-1.gif"/>
+            </div>
+            <div class="bounce"><img src="assets/scroll-black.png" /></div>
+          </div>
+          <!-- brief project description and your name -->
+          <div class="content-default__container padding__bottom-normal bg__1">
+            <section id="project-description">
+              <div class="content-default__row padding__top-large">
+                <div class="content-default__column-1">
+                  <h2 class="padding__bottom-normal">Manners of Death by Koh Qing Wen, Ariel</h2>
+                  <p class="p__large">
+                  Saul Bass (May 8, 1920 — April 25, 1996) was a graphic designer and filmmaker, perhaps best known for his design of film posters and title sequences. His influence on the title sequence was seminal. Before Bass, the title sequence hardly existed, it was just a series of names against a static image that the audience do not take notice of.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div class="content-default__container padding__top-normal padding__bottom-xlarge bg__2">
+            <section id="project-sections">
+              <div class="content-default__row">
+                <div class="content-default__column-1">
+                  <h2 class="padding__bottom-normal">Data</h2>
+                  <p>
+                    For this project, I researched the movies that Saul Bass have created the opening title sequences for.
+                  </p>
+                  <p class="padding__top-normal padding__bottom-normal">
+                    <a href="./data.html" class="link__rounded">Read more</a>
+                  </p>
+                </div>
+
+                <div class="content-default__column-1">
+                  <h2 class="padding__bottom-normal">Artefact</h2>
+                  <p>
+                    A silhouette of a body is used as a tribute to Saul’s Bass title sequence design for the movie “The Anatomy of Murder”. 
+                  </p>
+                  <p class="padding__top-normal padding__bottom-normal">
+                    <a href="./artefact.html" class="link__rounded">Show me</a>
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer bg__1">
+        <p class="p__small footer__content">B-DC221 Information Design Project<br />Computation in Design<br />2021.</p>
+      </footer>
+    </div>
+
+    <!-- finally, load our main javasript file -->
+    <script src="./js/main.js"></script>
+  </body>
+</html>
